@@ -4,72 +4,72 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 100%;
-  max-width: 1500px;
-  padding: 0 50px;
-  margin: 0 auto;
+ul {
+  list-style: none;
 }
 
-.header {
-  margin-top: 20px;
+.container {
+  width: 100%;
   background-color: #f8f8f8;
 }
 
-.inner {
+.wrap {
   width: 100%;
-  height: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  height: 100px;
+}
+
+.inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .logo {
-  font-size: 30px;
-  font-weight: 900;
-  width: 142px;
-  color: #f08300;
+  cursor: pointer;
 }
 
 .menu-list {
-  list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .menu-list li {
-  width: 150px;
-  height: 30px;
-  font-weight: 600;
+  padding: 20px;
+  cursor: pointer;
 }
 
 .side {
   display: flex;
-  align-items: center;
+  gap: 10px;
 }
 
-.language {
+.side span {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.side .eng {
+  color: #acacac;
+}
+
+.side-img {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 110px;
-  height: 45px;
-  font-size: 12px;
-  font-weight: 600;
-}
-.language :first-child {
-  opacity: 50%;
-  margin-right: 9px;
-}
-.side-img :first-child {
-  margin-right: 5px;
+  gap: 10px;
+  cursor: pointer;
 }
 
 .big-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 25px;
   width: 100%;
   padding-top: 120px;
 }
@@ -77,42 +77,33 @@
 .big-icon-img {
   display: flex;
   align-items: center;
-  width: 450px;
+  width: 50%;
   height: 280px;
-  border-radius: 5%;
-  margin-right: 25px;
+  border-radius: 12px;
   position: relative;
 }
 
-.big-icon :nth-child(1) {
+.big-icon .red {
   background-color: #fa4b14;
 }
 
-.big-icon :nth-child(2) {
+.big-icon .oran {
   background-color: #fd820e;
-}
-
-@media (max-width: 1180px) {
-  .big-icon-img {
-    display: block;
-  }
 }
 
 .big-icon-text {
   color: white;
   font-size: 35px;
   font-weight: 800;
-}
-.ko-text,
-.en-text {
   position: absolute;
-  top: 180px;
+  bottom: 50px;
   left: 25px;
 }
 
-.en-text {
-  position: absolute;
-  top: 140px;
-  font-size: 20px;
-  margin-bottom: 10px;
+.big-icon-text p {
+  margin-bottom: 15px;
+}
+
+.big-icon-text p:last-child {
+  margin-bottom: 0;
 }
