@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* container에 auto를 주기보다는 wrap이나 inner 공통 스타일을 입힌 후에 auto가 필요한 위치에 class name만 넣어주는게 더 효율적 */
+
 .container {
   width: 100%;
   max-width: 1500px;
@@ -11,29 +11,14 @@
   margin: 0 auto;
 }
 
-/* header 여백을 주고싶다면 margin보다는 padding을 
-   header의 양쪽 여백이 없음
-*/
-
-/* 기존코드 */
 .header {
   margin-top: 20px;
   background-color: #f8f8f8;
 }
 
-/* 수정된 코드 */
-/* .header {
-  height: 80px;
-  background-color: #f8f8f8;
-  display: flex;
-  align-items: center;
-} */
-
-/* text-align center를 사용한 이유  */
 .inner {
   width: 100%;
   height: 100%;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,11 +35,12 @@
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-/* margin으로 여백을 주기보단 li자체에 크기를 정해주고 안에 내용들을 중앙으로 정렬 시키는 것이 효율적 */
 .menu-list li {
-  margin-right: 48px;
+  width: 150px;
+  height: 30px;
   font-weight: 600;
 }
 
@@ -63,10 +49,12 @@
   align-items: center;
 }
 
-/* menu-list li와 마찬가지 */
 .language {
   display: flex;
-  margin-right: 25px;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 45px;
   font-size: 12px;
   font-weight: 600;
 }
@@ -74,7 +62,6 @@
   opacity: 50%;
   margin-right: 9px;
 }
-
 .side-img :first-child {
   margin-right: 5px;
 }
@@ -85,41 +72,47 @@
   justify-content: center;
   width: 100%;
   padding-top: 120px;
-  position: relative;
 }
 
-/* 4번째 이야기중 고정 width가 들어감 클론하는 사이트 들어가보면 해상도마다 width값이 달라짐 해결해보셈 */
-.wood,
-.build {
+.big-icon-img {
   display: flex;
   align-items: center;
   width: 450px;
   height: 280px;
   border-radius: 5%;
   margin-right: 25px;
+  position: relative;
 }
 
-.wood {
+.big-icon :nth-child(1) {
   background-color: #fa4b14;
 }
-.build {
+
+.big-icon :nth-child(2) {
   background-color: #fd820e;
 }
 
+@media (max-width: 1180px) {
+  .big-icon-img {
+    display: block;
+  }
+}
+
 .big-icon-text {
-  display: flex;
-  align-items: end;
   color: white;
   font-size: 35px;
   font-weight: 800;
 }
-.big-icon-text1 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.ko-text,
+.en-text {
+  position: absolute;
+  top: 180px;
+  left: 25px;
 }
 
-/* position absolute로 움직이는게 더 효율적 */
-.wood-text,
-.build-text {
-  padding: 150px 0px 0 30px;
+.en-text {
+  position: absolute;
+  top: 140px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
