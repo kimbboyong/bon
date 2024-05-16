@@ -24,6 +24,10 @@ ul {
   height: 100px;
 }
 
+.main {
+  height: 150vh;
+}
+
 .inner {
   display: flex;
   justify-content: space-between;
@@ -72,6 +76,7 @@ ul {
   gap: 25px;
   width: 100%;
   padding-top: 120px;
+  margin-bottom: 70px;
 }
 
 .big-icon-img {
@@ -112,8 +117,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 35px 0px;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .text {
@@ -130,4 +135,51 @@ ul {
   position: absolute;
   top: 22px;
   right: 55px;
+}
+
+.small-icon {
+  width: 100%;
+}
+
+.up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.about-us,
+.recruit,
+.pr {
+  border-radius: 25px;
+  padding: 25px;
+  width: 25%;
+  height: 200px;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.about-us {
+  width: 50%;
+}
+
+.up-en {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.up-kr {
+  font-weight: 600;
+  color: #9999b3;
+}
+
+.up-main-icon {
+  position: absolute;
+  right: 35px;
+  top: 110px;
+  color: #f08000;
+  opacity: 60%;
 }
