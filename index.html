@@ -61,23 +61,29 @@
           <i class="fa-solid fa-magnifying-glass fa-2x"></i>
         </div>
         <div class="small-icon">
+          <!-- <div class="wrap"> -->
+          <!-- up, down은 같은 섹션이기때문에 하나의 wrap으로 관리함 -->
           <div class="up wrap">
             <div class="about-us">
+              <!-- 같은 레이아웃, 같은 컬러, 같은 폰트, 같은 여백 클래스네임을 따로따로 지정안해주고 하나의 클래스로만 컨트롤 가능 -->
               <p class="up-en">About Us</p>
               <p class="up-kr">회사소개</p>
               <i class="up-main-icon fa-regular fa-building fa-4x"></i>
             </div>
             <div class="recruit">
+              <!-- 같은 레이아웃, 같은 컬러, 같은 폰트, 같은 여백 클래스네임을 따로따로 지정안해주고 하나의 클래스로만 컨트롤 가능 -->
               <p class="up-en">Recruit</p>
               <p class="up-kr">자기소개</p>
               <i class="up-main-icon fa-regular fa-user fa-4x"></i>
             </div>
             <div class="pr">
+              <!-- 같은 레이아웃, 같은 컬러, 같은 폰트, 같은 여백 클래스네임을 따로따로 지정안해주고 하나의 클래스로만 컨트롤 가능 -->
               <p class="up-en">PR</p>
               <p class="up-kr">홍보</p>
               <i class="up-main-icon fa-solid fa-bullhorn fa-4x"></i>
             </div>
           </div>
+
           <div class="down wrap">
             <div class="research">
               <p class="up-en">Research</p>
@@ -94,6 +100,7 @@
               <p class="up-kr">문의하기</p>
               <i class="down-main-icon fa-regular fa-envelope fa-4x"></i>
             </div>
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -108,6 +115,7 @@
                 <li>
                   <p class="org">개인정보처리방침</p>
                 </li>
+                <!-- 이건 li의 가상클래스 ::after, ::before을 활용하는게 좋음 -->
                 <li>
                   <p class="hold">ㅣ</p>
                 </li>
@@ -116,12 +124,16 @@
                 </li>
               </ul>
               <div class="tail-left-2">
+                <!-- address라는 시맨틱 태그가 있음 근데 span써도 ㄱㅊ -->
                 <span>
                   13840 경기도 과천시 과천대로7길 20 B타워 5층 (갈현동, 과천
                   스마트케이 업무시설)</span
                 >
               </div>
               <div class="tail-left-3">
+                <!-- href속성은 링크이동 뿐만 아니라 클릭시 전화 클릭시 이메일 등 다양함 알아보셈 -->
+                <!-- <a href="tel:010-1234-1234">010-1234-1234</a> -->
+
                 <span>Tel 02-6333-3000</span>
                 <p class="hold">ㅣ</p>
                 <span>Fax 02-6332-3000</span>
@@ -135,6 +147,7 @@
                 <p class="hold">ㅣ</p>
                 <span>그룹웨어</span>
               </div>
+              <!-- 카피라이트에 아이콘은 저렇게 복붙해도 되지만 &copy; 이걸쓰는게 간지임 -->
               <p class="tail-right-2">©2023 SUNJIN All rights reserved</p>
             </div>
           </div>
