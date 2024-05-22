@@ -185,8 +185,7 @@ ul {
   color: #9999b3;
 }
 
-.up-main-icon,
-.down-main-icon {
+.main-icon {
   position: absolute;
   right: 35px;
   top: 110px;
@@ -226,10 +225,10 @@ ul {
   flex-direction: column;
 }
 
-.tail-text,
-.tail-right .tail-right-1 {
+.tail-text {
   width: 100%;
   display: flex;
+  font-size: 10px;
 }
 
 .tail-left-1 {
@@ -238,11 +237,6 @@ ul {
 
 .tail-right-1 {
   margin: 25px 0px 5px 0px;
-}
-
-.tail-text,
-.tail-right {
-  font-size: 10px;
 }
 
 .org {
