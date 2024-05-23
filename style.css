@@ -191,6 +191,7 @@ ul {
   top: 110px;
   color: #f08000;
   opacity: 60%;
+  font-size: 50px;
 }
 
 .tail {
@@ -235,10 +236,6 @@ ul {
   font-weight: 700;
 }
 
-.tail-right-1 {
-  margin: 25px 0px 5px 0px;
-}
-
 .org {
   color: #fd820e;
 }
@@ -258,11 +255,143 @@ ul {
   justify-content: space-between;
 }
 
+.tail-right {
+  display: flex;
+  flex-direction: column;
+}
+
 .tail-right-1 {
+  margin: 25px 0px 5px 0px;
   justify-content: flex-end;
 }
 
 .tail-right-2 {
+  display: flex;
+  justify-content: flex-end;
   padding-top: 15px;
   color: #999fa9;
+}
+
+@media (max-width: 376px) {
+  .body {
+    width: 100%;
+  }
+
+  .warp {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 15px;
+  }
+
+  .inner {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .main {
+    padding-bottom: 75px;
+  }
+  .side-media,
+  .side span {
+    display: flex;
+    font-size: 7px;
+  }
+
+  .side-media1 {
+    position: absolute;
+    top: 15px;
+    right: 3px;
+  }
+
+  .eng,
+  .side-img {
+    padding-right: 7px;
+  }
+
+  .side-img {
+    gap: 6px;
+  }
+
+  .menu-list {
+    font-size: 10px;
+  }
+
+  .menu-list li {
+    padding: 12px;
+  }
+
+  .big-icon {
+    padding-top: 70px;
+    margin-bottom: 60px;
+  }
+
+  .big-icon-img {
+    height: 130px;
+  }
+
+  .big-icon-text {
+    top: 40px;
+    left: 15px;
+    font-size: 20px;
+  }
+
+  .text-box {
+    padding: 10px 10px 10px 20px;
+    height: 65px;
+  }
+
+  .text-box {
+    font-size: 12px;
+  }
+  .box i {
+    top: 20px;
+    right: 40px;
+    font-size: 25px;
+  }
+
+  .com {
+    padding: 15px;
+    height: 110px;
+    transition: all ease-in-out 0.1s;
+  }
+  .com:active {
+    background-color: goldenrod;
+    color: white;
+  }
+
+  .up-en,
+  .up-kr {
+    font-size: 11px;
+  }
+
+  .main-icon {
+    position: absolute;
+    right: 14px;
+    top: 74px;
+    font-size: 15px;
+  }
+
+  .tail {
+    padding: 50px 0;
+  }
+
+  .tail-left {
+    width: 85%;
+  }
+
+  .tail-right {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tail-text {
+    display: flex;
+    font-size: 7px;
+  }
+
+  .tail-right-2 {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
