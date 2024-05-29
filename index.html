@@ -6,78 +6,155 @@
     <title>My Webpage</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="body">
     <div class="container">
-      <div class="head">
-        <!--header-->
-        <div class="header">
-          <div class="wrap">
-            <div class="inner">
-              <div class="logo">SUNJIN</div>
-              <div class="menu">
-                <ul class="menu-list">
-                  <li>About</li>
-                  <li>Our Works</li>
-                  <li>PR Center</li>
-                  <li>Recruitment</li>
-                  <li>Contact</li>
-                </ul>
-              </div>
-              <div class="side">
-                <div class="language">
-                  <span>English</span>
-                  <span>한국어</span>
-                </div>
-                <div class="side-img">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  <i class="fa-regular fa-bookmark"></i>
-                </div>
-              </div>
+      <!--header-->
+      <div class="header">
+        <div class="inner wrap">
+          <figure class="logo" onclick="location.href=`https://www.naver.com`">
+            <img src="./images/logo.svg" alt="" />
+          </figure>
+
+          <ul class="menu-list pc-menu">
+            <li>About</li>
+            <li>Our Works</li>
+            <li>PR Center</li>
+            <li>Recruitment</li>
+            <li>Contact</li>
+          </ul>
+
+          <div class="side side-media side-media1">
+            <div class="language side-media">
+              <span class="eng side-media">English</span>
+              <span class="side-media">한국어</span>
+            </div>
+            <div class="side-img side-media">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+            <div class="mobile">
+              <i class="fa-solid fa-bars fa-2x slideOn"></i>
+            </div>
+          </div>
+
+          <div class="test mobile-menu">
+            <h2 class>Menu</h2>
+            <h3 class="closeBtn">Close</h3>
+            <ul class="menu-list">
+              <li>About</li>
+              <li>Our Works</li>
+              <li>PR Center</li>
+              <li>Recruitment</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--main-->
+      <div class="main">
+        <div class="big-icon wrap">
+          <div class="big-icon-img red">
+            <div class="big-icon-text">
+              <p class="en-text">Engineering</p>
+              <p class="ko-text">토목</p>
+            </div>
+          </div>
+          <div class="big-icon-img oran">
+            <div class="big-icon-text">
+              <p class="en-text">Architecture</p>
+              <p class="ko-text">건축</p>
             </div>
           </div>
         </div>
-
-        <!--main-->
-        <div class="main">
-          <div class="big-icon">
-            <div class="big-icon-img">
-              <div class="big-icon-text">
-                <p class="big-icon-text en-text">Engineering</p>
-                <p class="big-icon-text ko-text">토목</p>
-              </div>
+        <div class="box wrap">
+          <input
+            class="text-box"
+            type="text"
+            placeholder="선진의 다양한 프로젝트를 검색하세요."
+          />
+          <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+        </div>
+        <div class="small-icon">
+          <div class="up wrap">
+            <div class="about-us com">
+              <p class="up-en">About Us</p>
+              <p class="up-kr">회사소개</p>
+              <i class="main-icon up-main-icon fa-regular fa-building"></i>
             </div>
-            <div class="big-icon-img">
-              <div class="big-icon-text">
-                <p class="big-icon-text en-text">Architecture</p>
-                <p class="big-icon-text ko-text">건축</p>
-              </div>
+            <div class="recruit com">
+              <p class="up-en">Recruit</p>
+              <p class="up-kr">자기소개</p>
+              <i class="main-icon up-main-icon fa-regular fa-user"></i>
+            </div>
+            <div class="pr com">
+              <p class="up-en">PR</p>
+              <p class="up-kr">홍보</p>
+              <i class="main-icon up-main-icon fa-solid fa-bullhorn"></i>
             </div>
           </div>
-          <div class="box">
-            <input
-              class="text"
-              type="text"
-              placeholder="선진의 다양한 프로젝트를 검색하세요."
-            />
-          </div>
-          <div class="small-icon">
-            <div class="up">
-              <div class="about-us"></div>
-              <div class="recruit"></div>
-              <div class="pr"></div>
+          <div class="down wrap">
+            <div class="research com">
+              <p class="up-en">Research</p>
+              <p class="up-kr">연구</p>
+              <i class="main-icon down-main-icon fa-solid fa-flask"></i>
             </div>
-            <div class="down">
-              <div class="research"></div>
-              <div class="news"></div>
-              <div class="contact"></div>
+            <div class="news com">
+              <p class="up-en">News</p>
+              <p class="up-kr">소개</p>
+              <i class="main-icon down-main-icon fa-regular fa-newspaper"></i>
+            </div>
+            <div class="contact com">
+              <p class="up-en">Contact Us</p>
+              <p class="up-kr">문의하기</p>
+              <i class="main-icon down-main-icon fa-regular fa-envelope"></i>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- tail -->
-        <div class="tail">
-          <div class="company-name"></div>
-          <div class="ceo"></div>
+      <!-- tail -->
+      <div class="tail">
+        <div class="company-name wrap">
+          <h3>선진엔지니어링종합건축사사무소</h3>
+          <div class="tail-container">
+            <div class="tail-left">
+              <ul class="tail-left-1 tail-text">
+                <li>
+                  <p class="org">개인정보처리방침</p>
+                </li>
+                <li>
+                  <p class="hold">ㅣ</p>
+                </li>
+                <li>
+                  <p>이용약관</p>
+                </li>
+              </ul>
+              <div class="tail-left-2 tail-text">
+                <span>
+                  13840 경기도 과천시 과천대로7길 20 B타워 5층 (갈현동, 과천
+                  스마트케이 업무시설)</span
+                >
+              </div>
+              <div class="tail-left-3 tail-text">
+                <span>Tel 02-6333-3000</span>
+                <p class="hold">ㅣ</p>
+                <span>Fax 02-6332-3000</span>
+                <p class="hold">ㅣ</p>
+                <span>E-mail tjswls@naver.com</span>
+              </div>
+            </div>
+            <div class="tail-right tail-text">
+              <div class="tail-right-1 tail-text">
+                <span>웹하드</span>
+                <p class="hold">ㅣ</p>
+                <span>그룹웨어</span>
+              </div>
+              <div class="tail-right-2">
+                <p>©2023 SUNJIN All rights reserved</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -86,5 +163,7 @@
       src="https://kit.fontawesome.com/20716422d0.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
